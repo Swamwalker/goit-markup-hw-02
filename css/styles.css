@@ -1,9 +1,58 @@
 /*Палитра
 Основний фон #FFFFFF
-Другорядний фон #F5F5F5
-Альтернативний фон #F5F4FA
-Основний колір тексту background: #212121;
-Другорядний колір тексту background: #757575;
-Колір акценту background: #2196F3;
+Другорядний фон #F5F4FA
+Основний колір тексту #212121;
+Другорядний колір тексту#757575;
+Колір акценту #2196F3;
 Колір лого #000000;
+Альтернативний колір тексту #FFFFFF;
+Альтернативний колір другорядного тексту rgba(255, 255, 255, 0.6)
+Фон футера #2F303A;
+
 */
+:root {
+    --primery-text-colop:#212121;
+    --secondary-text-color:#757575;
+    --acsent-color:#2196F3;
+    --background-color: #FFFFFF;
+}
+
+body {
+background-color: #FFFFFF;
+}
+/*Заголовок*/
+
+.logo-acsent{
+    color: var(--acsent-color)
+}
+.logo,
+.logo-acsent:focus {
+color: #000000;
+}
+.navigation .link {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color:var(--primery-text-colop)
+}
+.navigation .link:focus,
+.navigation .link:hover{
+color: var(--acsent-color)
+}
+.contacts .link{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color:var(--secondary-text-color)
+}
+.contacts .link:focus,
+.contacts .link:hover
+{
+color: var(--acsent-color);
+}
