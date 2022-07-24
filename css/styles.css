@@ -13,46 +13,101 @@
 :root {
     --primery-text-colop:#212121;
     --secondary-text-color:#757575;
-    --acsent-color:#2196F3;
+    --akcent-color:#2196F3;
     --background-color: #FFFFFF;
 }
 
 body {
 background-color: #FFFFFF;
 }
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    text-decoration: ;
+}
 /*Заголовок*/
 
-.logo-acsent{
-    color: var(--acsent-color)
+.logo-akcent{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--akcent-color)
 }
-.logo,
-.logo-acsent:focus {
-color: #000000;
+.logo-akcent:focus{
+    color:#000000;
 }
+.logo{
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color:#000000;}
+    .logo:focus {
+        color: var(--akcent-color);
+    }
 .navigation .link {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color:var(--primery-text-colop)
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;    
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--primery-text-colop)
 }
 .navigation .link:focus,
 .navigation .link:hover{
-color: var(--acsent-color)
+    color: var(--akcent-color)
 }
 .contacts .link{
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-color:var(--secondary-text-color)
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
 }
 .contacts .link:focus,
 .contacts .link:hover
 {
-color: var(--acsent-color);
+    color: var(--akcent-color);
+}
+/*Підвал*/
+.footer {
+    background-color: #2F303A;
+}
+.footer .logo {
+    color: var(--background-color);
+}
+footer .logo:focus{
+    color: var(--secondary-text-color);
+}
+.footer .logo-akcent:focus{
+    color: var(--background-color);
+}
+.address .first{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    columns: var(--background-color);
+}
+.address .second,
+.address .third{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6)
 }
