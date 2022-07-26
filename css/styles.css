@@ -15,11 +15,18 @@
     --secondary-text-color:#757575;
     --akcent-color:#2196F3;
     --background-color: #FFFFFF;
+    --secondary-background-color:#F5F4FA;
+    --logo-text-color:#000000;
+    --footer-bg: #2F303A;
+    --hero-btn-hov-color:#188CE8;
+    --footer-text-secondary-color:rgba(255, 255, 255, 0.6);
 }
 
 body {
-background-color: #FFFFFF;
+color: var(--primery-text-colop);
 font-family:  'Roboto', sans-serif;
+letter-spacing: 0.03em;
+background-color:var(--background-color)
 }
 ul{
     list-style: none;
@@ -35,11 +42,7 @@ a{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
     color: var(--akcent-color)
-}
-.logo-akcent:focus{
-    color:#000000;
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -47,11 +50,7 @@ a{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    letter-spacing: 0.03em;
-    color:#000000;}
-    .logo:focus {
-        color: var(--akcent-color);
-    }
+    color: var(--logo-text-color)}
 .navigation .link {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -79,19 +78,18 @@ a{
 {
     color: var(--akcent-color);
 }
-.section .title{
+.section .title,
+.team-section .title{
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    letter-spacing: 0.03em;
     color:var(--primery-text-colop);
 }
 /*Герой*/
 .hero{
-    background-color:#2F303A;
+    background-color:var(--footer-bg)
 }
 .hero .title{
     font-family: 'Roboto', sans-serif;
@@ -118,9 +116,14 @@ a{
     border: 0em;
     border-radius: 4px;
     color: var(--background-color);
-    background-color: var(--akcent-color);
-
-}
+    background: var(--akcent-color);
+    cursor: pointer;}
+.hero-button:hover,
+.hero-button:focus{
+    background: var(--hero-btn-hov-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    }
 /*Принципи*/
 .principles .list .title{
     font-family: 'Roboto', sans-serif;
@@ -129,7 +132,6 @@ a{
     font-size: 14px;
     line-height: 1.14;
     text-align: left;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--primery-text-colop);
 }
@@ -139,10 +141,27 @@ a{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
     color:var(--secondary-text-color);
 }
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
 /*Команда*/
+.team-section{
+    background-color: var(--secondary-background-color);
+}
+.team .list{
+    background-color: var(--background-color);
+}
 .team .list .title{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -150,7 +169,6 @@ a{
     font-size: 16px;
     line-height: 1.18;
     text-align: left;
-    letter-spacing: 0.03em;
     color:var(--primery-text-colop);
 }
 .team .list .content{
@@ -160,13 +178,11 @@ a{
     font-size: 16px;
     line-height: 1.18;
     text-align: left;
-    letter-spacing: 0.03em;
     color:var(--secondary-text-color);
 }
 /*Підвал*/
 .footer {
-    background-color: #2F303A;
-}
+    background-color: var(--footer-bg)}
 .footer .logo {
     color: var(--background-color);
 }
@@ -182,7 +198,6 @@ footer .logo:focus{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
     color: var(--background-color);
 }
 .address .second,
@@ -192,8 +207,15 @@ footer .logo:focus{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6)
+    color: var(--footer-text-secondary-color);
+}
+.address .first:hover,
+.address .second:hover,
+.address .third:hover,
+.address .first:focus,
+.address .second:focus,
+.address .third:focus{
+    color:var(--akcent-color)
 }
 /*Стилі для портфоліо*/
  .gallary .list .item{
@@ -203,11 +225,11 @@ footer .logo:focus{
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em;
     color:var(--primery-text-colop);
-    background-color:#F5F4FA;
+    background-color:var(--secondary-background-color);
     border-radius: 4px;
     border: 0em;
+    cursor: pointer;
  }
  .gallary .list .item:focus,
  .gallary .list .item:hover{
@@ -229,6 +251,5 @@ footer .logo:focus{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
-    letter-spacing: 0.03em;
     color:var(--secondary-text-color);
  }
