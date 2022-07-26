@@ -52,8 +52,6 @@ a{
     line-height: 1.2;
     color: var(--logo-text-color)}
 .navigation .link {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;    
     line-height: 1.14;
@@ -65,8 +63,6 @@ a{
     color: var(--akcent-color)
 }
 .contacts .link{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -80,8 +76,6 @@ a{
 }
 .section .title,
 .team-section .title{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -92,8 +86,6 @@ a{
     background-color:var(--footer-bg)
 }
 .hero .title{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -103,16 +95,12 @@ a{
     color:var(--background-color);
 }
 .hero-button{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-family:inherit;
+    font-style:inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.06em;
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
     border: 0em;
     border-radius: 4px;
     color: var(--background-color);
@@ -126,8 +114,6 @@ a{
     }
 /*Принципи*/
 .principles .list .title{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -136,8 +122,6 @@ a{
     color:var(--primery-text-colop);
 }
 .principles .list .content{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -163,8 +147,6 @@ a{
     background-color: var(--background-color);
 }
 .team .list .title{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -172,8 +154,6 @@ a{
     color:var(--primery-text-colop);
 }
 .team .list .content{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
@@ -186,14 +166,7 @@ a{
 .footer .logo {
     color: var(--background-color);
 }
-footer .logo:focus{
-    color: var(--secondary-text-color);
-}
-.footer .logo-akcent:focus{
-    color: var(--background-color);
-}
 .footer .address .first{
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -202,7 +175,6 @@ footer .logo:focus{
 }
 .address .second,
 .address .third{
-    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -219,7 +191,7 @@ footer .logo:focus{
 }
 /*Стилі для портфоліо*/
  .gallary .list .item{
-    font-family: 'Roboto', sans-serif;
+    font-family: inherit;
     font-style: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -237,8 +209,6 @@ footer .logo:focus{
         color: var(--background-color);
  }
  .gallary .card-list .title{
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -246,8 +216,6 @@ footer .logo:focus{
     color:var(--primery-text-colop);
  }
  .gallary .card-list .content{
-    font-family: 'Roboto',sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
